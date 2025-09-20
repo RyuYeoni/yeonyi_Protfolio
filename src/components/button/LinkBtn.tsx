@@ -86,7 +86,7 @@ function LinkBtn({ name, text, giturl, depoloyurl, blog }: LinkProps) {
               {blog && <HoverModal blog={blog} />}
             </HoverButton>
           ) : (
-            <LinkButton href={giturl ? giturl : depoloyurl} aria-label={text} title='바로가기(새창)'>
+            <LinkButton href={giturl ? giturl : depoloyurl} aria-label={text} title='Link (opens in new window)'>
               <IconCircle>
                 <Img src={`${ICON_URL}${name}.svg`} alt={name} />
               </IconCircle>

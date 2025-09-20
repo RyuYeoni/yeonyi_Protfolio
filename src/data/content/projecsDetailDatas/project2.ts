@@ -1,64 +1,120 @@
 export const project2 = {
-  name: 'hancom',
-  pointcolor: 'before:bg-[#0b4da1]',
-  title: 'IT 온라인 수강 사이트',
+  name: 'Diet Chef',
+  pointcolor: 'before:bg-[#FCA311]',
+  title: 'Diet Chef',
+  imgurl: "/images/thumbnail_dietchef.webp", 
   subtext:
-    'IT융합 전문 교육센터로 기존 홈페이지를 새롭게 리뉴얼된 홈페이지입니다.\n클라이언트가 제공한 기획서 및 디자인을 확인하고 요구 사항을 참고하여 작업 했습니다.',
-  data: '2022 - 약 6개월',
-  team: '기여도 70%',
-  tag: ['장기', '반응형', '퍼블리싱'],
-  depoloyurl: 'https://online.hancomacademy.com/',
-  tools: [
+  'A web application that recommends personalized meal plans based on user\'s physical data, activity level, and goals (weight loss/maintenance/gain). Provides automatic meal recommendations, manual meal input, and nutritional intake statistics visualization features.\n\nKey features include user management system, personalized meal recommendations, food information search, and recipe book management functionality.',
+  data: '2025.04-2025.06',
+  team: '60% Contribution',
+  tag: ['Web Application', 'React'],
+
+  detailimginfo: [
     {
-      title: 'HTML',
-      detail: '웹 페이지의 구조를 HTML로 마크업하여 웹 표준을 준수하고, 웹 접근성을 고려하며 작업했습니다.',
+      imgurl: "/images/project_dietchef1.webp", 
+      subject: 'Main Page',
     },
     {
-      title: 'CSS',
-      detail: 'CSS를 활용하여 각 요소에 일관된 스타일링을 적용하여 사용자 경험을 향상시켰습니다.',
+      imgurl: "/images/project_dietchef2.webp", 
+      subject: 'Login/Sign Up',
     },
     {
-      title: 'jQuery',
-      detail:
-        'jQuery는 자바스크립트 언어를 단순화시켜 개발을 편리하게 할 수 있도록 도와주는 오픈 소스 기반의 자바스크립트 라이브러리입니다.',
+      imgurl: "/images/project_dietchef3.webp", 
+      subject: 'Personalized Meal Recommendations',
+    },
+    {
+      imgurl: "/images/project_dietchef4.webp", 
+      subject: 'Saved Recipe Viewing & Management Page',
+    },
+    {
+      imgurl: "/images/project_dietchef5.webp", 
+      subject: 'Recipe Detail View',
+    },
+    {
+      imgurl: "/images/project_dietchef6.webp", 
+      subject: 'Food Information Detail Page',
     },
   ],
-  featinfo: [],
+  giturl: 'https://github.com/RyuYeoni/DietChef',
+  depoloyurl: 'https://youtu.be/MNkuW48aass?si=sfQoV9r_NnbA5fs5',
+
+  tools: [
+  {
+  title: 'React',
+  detail: 'Built component-based user interfaces using React and implemented state management and lifecycle management using Hooks.',
+  },
+  {
+  title: 'Firebase Realtime Database',
+  detail: 'Implemented real-time synchronization of user data, meal information, and recipe data along with cloud-based data management using Firebase Realtime Database.',
+  },
+  {
+  title: 'Firebase Authentication',
+  detail: 'Implemented Google OAuth login through Firebase Authentication and built a system for real-time user authentication state management.',
+  },
+  {
+  title: 'Unsplash API',
+  detail: 'Integrated Unsplash API to dynamically fetch food images and implemented fallback processing with emojis when API calls fail.',
+  },
+  ],
+  featinfo: ['Google OAuth Login', 'BMI-based Meal Recommendations', 'Food Search & Nutritional Info', 'Personal Recipe Book', 'User Profile Management', 'Diet Management Tracking'],
   parts: [
-    {
-      title: '원활한 커뮤니케이션을 위한 담당자와의 직접적인 소통',
-      detailList: [
-        `요구사항 등을 정확히 파악하고 이해하기 위해 직접 소통하며 일정과 요구사항을 체크`,
-        `개선 사항 등 피드백을 받았을 때 열린 마음으로 수용하고, 더 나은 방향으로 제안하여 프로젝트를 구체화`,
+  {
+    title: 'Social Login System Using Firebase Authentication',
+    detailList: [
+      'Implemented simple login functionality through Google OAuth and automatic differentiation between new/existing users',
+      'Automated real-time authentication state detection and page routing using onAuthStateChanged',
+      'Implemented user progress tracking and back navigation prevention using SessionStorage',
       ],
     },
-    {
-      title: '협업 툴을 활용한 프론트엔드 개발자와의 커뮤니케이션',
-      detailList: [
-        `\`Google Sheets\`를 활용해 진행도, 주요사항 등 작업 현황 및 일정 공유`,
-        `클라이언트의 요구사항을 시각화 해 전달하면서 요구사항을 명확하게 전달하고 주기적인 회의를 통해 개선`,
+  {
+    title: 'Efficient State Management Using React Hooks',
+    detailList: [
+      'Built complex form data management system combining useState, useEffect, and useCallback Hooks',
+      'Implemented conditional page routing and user flow control using useNavigate Hook',
+      'Prevented memory leaks through event listener cleanup during component unmounting',
       ],
     },
-    {
-      title: '디자인 시안이 없던 기타 페이지 디자인 (PC, Mobile)',
-      detailList: [
-        `디자인 시안을 받지 못한 기타 페이지 디자인을 담당`,
-        `이미 디자인되어 있던 기존 페이지와의 일관성을 유지하도록 노력`,
+  {
+  title: 'Firebase Realtime Database Real-time Data Synchronization',
+    detailList: [
+      'Implemented CRUD operations and real-time data updates using ref, get, set, remove functions',
+      'Enhanced data isolation and security through user-specific individual database path design',
+      'Implemented consistent daily meal recommendation system through date-based hash algorithm',
       ],
     },
-    {
-      title: '기존 적응형 웹 업무 방식을 반응형 웹 도입을 주도하여 업무 환경 개선',
-      detailList: [
-        `적응형 웹 방식으로 작업하던 업무 환경에서, 이번 프로젝트에서 **동일한 UI에 배치만 변경되는** 구성으로 반응형 웹 도입을 주도`,
-        `반응형 웹을 도입을 통해 **업무 환경 및 작업 효율을 2배로 개선**`,
+  {
+  title: 'External API Integration and Error Handling',
+    detailList: [
+      'Implemented dynamic image loading functionality through Unsplash API',
+      'Enhanced user experience through emoji fallback processing when API calls fail',
+      'Systematic error handling using try-catch statements',
       ],
     },
-    {
-      title: '웹 표준 / 접근성 고려 및 퍼블리싱',
-      detailList: [
-        `디자인된 웹 페이지를 마크업하여 웹 표준을 준수하고 웹 접근성을 고려하며 진행`,
-        `요구사항에 따라 \`slick slider\`와 같은 외부 라이브러리를 활용해 동적인 화면을 보여 줌`,
-        `간단한 토글 버튼과 같은 작업에는 \`jQuery\`를 활용해 구현`,
+  {
+  title: 'Interaction Design for User Experience Optimization',
+    detailList: [
+      'Prevented page leaving and data loss using beforeunload event',
+      'Controlled event bubbling and prevented unintended actions through stopPropagation',
+      'Provided clear progress feedback to users through loading state management',
+      ],
+    },
+  {
+  title: 'Personalized Meal Recommendations Using BMI-based Algorithm',
+    detailList: [
+      'Implemented user body type analysis through BMI calculation and classification algorithm',
+      'Created customized meal category system with 18 different cases combining exercise level, goals, and BMI',
+      'Implemented consistent daily meal recommendation logic through date-based hash function',
+      ],
+    },
+  ],
+
+  insight: [
+  {
+    title: 'Future Improvement and Expansion Plans',
+    detailList: [
+      'Support for various login methods: Plan to expand from current Google OAuth only to email/password registration and other social logins like Facebook',
+      'Advanced meal recommendation using AI APIs: Plan to build more diverse and personalized meal recommendation system by integrating AI or specialized nutrition APIs',
+      'Community feature addition: Plan to develop social features for sharing diet experiences, meal reviews, and motivation among users',
       ],
     },
   ],

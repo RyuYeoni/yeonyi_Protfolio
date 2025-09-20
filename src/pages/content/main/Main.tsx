@@ -5,7 +5,6 @@ import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import { isMobile } from '../../../utils/isMobile';
-import myImg from '../../../assets/images/jieun_img.webp';
 import SocialLinkList from '../../../components/main/SocialList';
 import ScrollArrow from '../../../components/main/ScrollArrow';
 import InfoWrap from '../../../components/main/InfoWrap';
@@ -69,9 +68,9 @@ function Main() {
           initial={OPACITY_0}
           animate={OPACITY_1}
           transition={{ ...ANI_TRANSITION, delay: 3 }}
-          src={myImg}
+          src="/images/yeoni_img.webp"
           ismobile={ismobile}
-          alt='최지은 인물 사진'
+          alt='Pic of Yeonyi Rhyu'
           loading='lazy'
         />
 
