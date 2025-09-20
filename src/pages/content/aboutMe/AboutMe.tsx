@@ -11,6 +11,7 @@ import ScrollAni from '../../../styles/ScrollAni';
 import useScrollAnimation from '../../../hooks/useScrollAnimation';
 import LeftWrap from '../../../components/aboutMe/LeftWrap';
 import InterviewWrap from '../../../components/aboutMe/InterviewWrap';
+import DataToolTip from '../../../components/toolTip/ToolTip'; 
 
 const IntroComponent = tw.main`
   relative
@@ -127,7 +128,9 @@ function AboutMe() {
                       <SubTit>{key}</SubTit>
                       <StackIcons>
                         {stacks.map((stack) => (
-                          <StackIcon key={stack} stack={stack} width={`w-[calc(100%-5%)]`} />
+                          <DataToolTip key={stack} dataTooltip={stack} type="top">
+                            <StackIcon stack={stack} width={`w-[calc(100%-5%)]`} />
+                          </DataToolTip>
                         ))}
                       </StackIcons>
                     </StackBox>
