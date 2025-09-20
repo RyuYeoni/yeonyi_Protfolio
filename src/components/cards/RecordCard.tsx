@@ -1,7 +1,6 @@
 import tw from 'tailwind-styled-components';
 import StackIcon from '../atoms/tools/ToolIcon';
 import { RecordDataT } from '../../types/type';
-import DataToolTip from '../toolTip/ToolTip'; 
 
 export const CardContainer = tw.section`
   overflow-hidden
@@ -82,9 +81,7 @@ function RecordCard({ data, title, role, infos, stacks }: RecordDataT) {
       </TxtWrap>
       <Tags>
         {stacks.map((stack, idx) => (
-          <DataToolTip key={idx} dataTooltip={stack} type="top">
-            <StackIcon stack={stack} width={`w-[47px]`} />
-          </DataToolTip>
+          <StackIcon key={idx} stack={stack} width={`w-[50px]`} />
         ))}
       </Tags>
     </CardContainer>
