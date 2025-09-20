@@ -7,7 +7,7 @@ function MailSentBtn({ name }: ButtonNameT) {
   const goToSite = () => {
     const mailUrl = EMAILL;
     navigator.clipboard.writeText(mailUrl).then(() => {
-      alert("이메일 주소가 복사되었습니다!");
+      alert("The email address has been copied.");
     })
   };
 

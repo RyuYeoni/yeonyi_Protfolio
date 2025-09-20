@@ -218,8 +218,7 @@ function ProjectDetail() {
                 <CloseBtn closeModal={closeModal} />
                 <ContBtns>
                   {projectDetail.giturl && <LinkBtn name='github_bk' giturl={projectDetail.giturl} text='GitHub' />}
-                  {projectDetail.depoloyurl && <LinkBtn name='link' depoloyurl={projectDetail.depoloyurl} text='배포 링크' />}
-                  {projectDetail.blogurl && <LinkBtn name='blog' blog={projectDetail.blogurl} text='관련 블로그' />}
+                  {projectDetail.depoloyurl && <LinkBtn name='link' depoloyurl={projectDetail.depoloyurl} text='Demo Video' />}
                 </ContBtns>
               </Btns>
 
@@ -246,7 +245,7 @@ function ProjectDetail() {
                 {
                   projectDetail.featinfo.length !== 0 && (
                     <PWrap>
-                      <PTitle>📍 주요 기능 및 특징</PTitle>
+                      <PTitle>📍 Key Features and Functions</PTitle>
                       <PDetailList>
                         {
                           projectDetail.featinfo.map((list, idx) => (
@@ -260,8 +259,8 @@ function ProjectDetail() {
 
                 <PWrap>
                   <PTitle>
-                    🛠️ 사용 기술 및 언어
-                    <PSubText>클릭 시 세부 내용을 확인 할  수 있습니다.</PSubText>
+                    🛠️ Technologies and Languages Used
+                    <PSubText>Click to view detailed information.</PSubText>
                   </PTitle>
                   <Toggles>
                     {
@@ -279,7 +278,7 @@ function ProjectDetail() {
 
                 <PWrap>
                   <PTitle>
-                    ✨ 작업 기여도
+                    ✨ Contribution to the Project
                   </PTitle>
                   <Toggles>
                     {
@@ -320,7 +319,7 @@ function ProjectDetail() {
                   projectDetail.insight && projectDetail.insight.length !== 0 && (
                     <PWrap>
                       <PTitle>
-                        ☕️ 회고
+                        ☕️ Retrospective
                       </PTitle>
                       <Toggles>
                         {
@@ -342,8 +341,8 @@ function ProjectDetail() {
                   projectDetail.detailimginfo && (
                     <PWrap>
                       <PTitle>
-                        💻 작업 화면
-                        <PSubText>이미지 클릭 시 크게 볼 수 있습니다. (작업화면이 현재와 다를 수 있습니다.)<br />* 저작권 이슈가 있는 경우 첨부하지 않았습니다.</PSubText>
+                        💻 Screenshot
+                        <PSubText>Click the image to view it in full size. (The interface may differ from the current version.)<br />* Images with copyright issues have not been included.</PSubText>
                       </PTitle>
 
                       <ImgContList>
