@@ -7,7 +7,7 @@ import ProjectCard from '../../../components/cards/ProjectCard';
 import useScrollAnimation from '../../../hooks/useScrollAnimation';
 import ScrollAni from '../../../styles/ScrollAni';
 import TabBtn from '../../../components/button/TabBtn';
-import { tabMenuList } from '../../../utils/constant/constant';
+// import { tabMenuList } from '../../../utils/constant/constant';
 
 const ProjectComponent = tw.section`
   grid
@@ -27,19 +27,19 @@ const Container = tw.article`
   pt-20
 `
 
-const TabMenuList = tw.div`  
-  w-fit
-  flex
-  gap-2
-  items-center
-  justify-center
-  rounded-full
-  px-4
-  py-3
-  bg-lightGray
+// const TabMenuList = tw.div`  
+//   w-fit
+//   flex
+//   gap-2
+//   items-center
+//   justify-center
+//   rounded-full
+//   px-4
+//   py-3
+//   bg-lightGray
 
-  max-sm:w-full
-`
+//   max-sm:w-full
+// `
 
 
 function Project({ id, navTabs }: TabsPropsT) {
@@ -50,13 +50,13 @@ function Project({ id, navTabs }: TabsPropsT) {
     <>
       <ScrollAni className={`${scrollEl ? 'fadeAn fadeIn' : 'fadeOut'}`} ref={scrollRef}>
         <Container id={id} ref={navTabs[0].targetRef} >
-          <TabMenuList>
+          {/* <TabMenuList>
             {
               tabMenuList.map((item) => (
                 <TabBtn key={item.type} type={item.type}>{item.name}</TabBtn>
               ))
             }
-          </TabMenuList>
+          </TabMenuList> */}
           <ProjectComponent>
             {filterDataList.length <= 0 && projectData.map((item, idx) => (
               <ProjectCard
