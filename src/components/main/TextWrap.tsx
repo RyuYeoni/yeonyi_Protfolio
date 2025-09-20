@@ -6,7 +6,7 @@ import { AnimationP, BgText, MainSubText, MainTitle } from '../atoms/text/Text.s
 
 export const TxtBox = tw.section`
   absolute
-  top-12
+  top-8
   flex
   items-center
   flex-col
@@ -42,13 +42,13 @@ function TextWrap() {
           animate={{ ...OPACITY_1, y: WINDOW_HEIGHT }}
           transition={ANI_TRANSITION}
         >
-          프론트엔드 개발자 <StTxt>최지은</StTxt>입니다.
+          I'm <StTxt>Yeonyi Rhyu</StTxt>, a Practical Innovator
           <BgText>
             <AnimationP
               initial={{ y: 150 }}
               animate={{ ...Y_0 }}
               transition={{ ...ANI_TRANSITION, delay: 1 }}
-            >Front-End</AnimationP>
+            >Android</AnimationP>
           </BgText>
         </MainTitle>
       </IntroAnimationDiv>
@@ -58,14 +58,14 @@ function TextWrap() {
         animate={{ ...OPACITY_1, ...Y_P10 }}
         transition={{ ...ANI_TRANSITION, delay: 3 }}
       >
-        사용자를 생각하는 <BoldTxt>역지사지</BoldTxt> 마인드,
+        I turn ideas into real solutions by improving <BoldTxt>usability, efficiency</BoldTxt>, and <BoldTxt>impact</BoldTxt>.
       </MainSubText>
       <MainSubText
         initial={{ ...OPACITY_0, ...Y_0 }}
         animate={{ ...OPACITY_1, ...Y_P10 }}
         transition={{ ...ANI_TRANSITION, delay: 3.5 }}
       >
-        포기하지 않고 <BoldTxt>책임감</BoldTxt>있게 일하는 개발자입니다.
+        With a <BoldTxt>full-stack mindset</BoldTxt> and <BoldTxt>collaborative approach</BoldTxt>, I bring concepts to life.
       </MainSubText>
     </TxtBox >
   )
