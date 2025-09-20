@@ -1,14 +1,14 @@
 export const aboutMetags = [
   {
-    name: '#역지사지',
+    name: '#Innovation',
   },
   {
-    name: '#메타인지',
+    name: '#Teamwork',
   },
   {
-    name: '#피드백_수용',
+    name: '#Solver',
   },
   {
-    name: '#끊임없는_배움',
+    name: '#FullStack',  
   },
 ];
