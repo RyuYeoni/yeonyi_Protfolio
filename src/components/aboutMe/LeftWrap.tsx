@@ -40,7 +40,6 @@ const LeftWrap = () => {
           ))}
         </TagTxtWrap>
       </FlexBox>
-      {/* <ShowReviewBtn handelImgChange={handelImgChange}>팀원 리뷰 보기</ShowReviewBtn> */}
     </LeftContainer>
   );
 };

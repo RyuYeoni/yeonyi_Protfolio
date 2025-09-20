@@ -49,7 +49,7 @@ function Project({ id, navTabs }: TabsPropsT) {
   return (
     <>
       <ScrollAni className={`${scrollEl ? 'fadeAn fadeIn' : 'fadeOut'}`} ref={scrollRef}>
-        <Container id={id} ref={navTabs[1].targetRef} >
+        <Container id={id} ref={navTabs[0].targetRef} >
           <TabMenuList>
             {
               tabMenuList.map((item) => (
