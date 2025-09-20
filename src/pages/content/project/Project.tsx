@@ -6,7 +6,7 @@ import { projectData } from '../../../data/content/projectData';
 import ProjectCard from '../../../components/cards/ProjectCard';
 import useScrollAnimation from '../../../hooks/useScrollAnimation';
 import ScrollAni from '../../../styles/ScrollAni';
-import TabBtn from '../../../components/button/TabBtn';
+// import TabBtn from '../../../components/button/TabBtn';
 // import { tabMenuList } from '../../../utils/constant/constant';
 
 const ProjectComponent = tw.section`
