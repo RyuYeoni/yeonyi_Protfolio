@@ -1,7 +1,7 @@
 export const ICON_URL = '/icons/icon_';
 
-export const UPDATE_DATA = '24. 12. 21';
-export const EMAILL = 'crg1050@gmail.com';
+export const UPDATE_DATA = '25. 09. 16';
+export const EMAILL = 'yeoni030915@gmail.com';
 
 export const OPACITY_0 = { opacity: 0 };
 export const OPACITY_1 = { opacity: 1 };
@@ -20,18 +20,18 @@ export const ANI_TRANSITION = { ease: 'easeOut', duration: 0.8 };
 export const socialLink = [
   {
     id: 1,
-    datatooltip: 'GitHub 가기',
+    datatooltip: 'Go to GitHub',
     tooltiptype: 'bottom',
-    href: 'https://github.com/jieun419',
+    href: 'https://github.com/RyuYeoni',
     arialabel: 'GitHub',
     target: '_blank',
   },
   {
     id: 2,
-    datatooltip: '블로그 가기',
+    datatooltip: 'Go to LinkedIn',
     tooltiptype: 'bottom',
-    href: 'https://velog.io/@crg1050',
-    arialabel: 'Velog',
+    href: 'https://www.linkedin.com/in/yeonyi-rhyu-kr/',
+    arialabel: 'Linkedin',
     target: '_blank',
   },
 ];

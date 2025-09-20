@@ -45,15 +45,14 @@ function Finish() {
         <ScrollAni className={`${scrollEl ? 'fadeAn fadeIn' : 'fadeOut'}`} ref={scrollRef} width='100%'>
           <TextWrap>
             <MainTitle>
-              봐주셔서 감사합니다 :)
+              Thank you for your time :)
               <BgText>
                 <AnimationP>Thank You</AnimationP>
               </BgText>
             </MainTitle>
 
             <MainSubText>
-              프론트엔드 개발자로 성장하기 위해 낯선 기술에도 적극적으로 도전하고,<br />
-              항상 사용자의 관점에서 생각하며 사용하기 좋은 서비스를 만들고 싶습니다.
+              Join me in watching the journey of making the world better as a developer!
             </MainSubText>
             <SocialLinkList />
           </TextWrap>

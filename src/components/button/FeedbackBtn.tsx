@@ -4,7 +4,7 @@ import { WhiteCricleBtn } from './Button.styled';
 
 function FeedbackBtn({ name }: ButtonNameT) {
   const goToSite = () => {
-    window.open('https://forms.gle/YQXhTe4pD2qovnxh6');
+    window.open('https://forms.gle/73fn4gyDUf81WSiL6');
   };
 
   return (
